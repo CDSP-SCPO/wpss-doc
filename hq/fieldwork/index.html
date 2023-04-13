@@ -1537,7 +1537,7 @@
 <h3 id="messages">Messages<a class="headerlink" href="#messages" title="Permanent link">🔗</a></h3>
 <p>Messages are actually sent by the survey platform, that provides in return informations regarding the process. In WPSS, this information is displayed as statistics.</p>
 <h4 id="emails">Emails<a class="headerlink" href="#emails" title="Permanent link">🔗</a></h4>
-<p>Email messages statistics include the following items:</p>
+<p>Email delivery data are available through Qualtrics API. Email messages statistics are automatically available. They will include the following items:</p>
 <table>
 <thead>
 <tr>
@@ -1579,6 +1579,7 @@
 <p><img alt="WPSS email delivery statistics" src="../../img/hq/hq-msgd-stats.png" /></p>
 <p>The click on <code>Panel name</code> buttons provides this information at an individual panelist level.</p>
 <h4 id="sms">SMS<a class="headerlink" href="#sms" title="Permanent link">🔗</a></h4>
+<p>Short text messages delivery data are <strong>not</strong> available through Qualtrics API. The WPSS support staff has to manually download and pre-process data from Qualtrics web interface before SMS statistics can be made available on WPSS. To get detailed statistics of an sms distribution, you must commuicate to the support staff the WPSS ID of the desired distribution (see table and screenshot below).</p>
 <p>Short text messages statistics include the following items:</p>
 <table>
 <thead>
@@ -1588,6 +1589,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><code>UID</code></td>
+<td align="left">UID (identifier) of the SMS delivery. This ID should be provided to the support staff first</td>
+</tr>
 <tr>
 <td><code>Links to send</code></td>
 <td align="left">Number of links delivered by this message. The count may be less than reported as “Sent” by Qualtrics in case several trials are necessary to send at least one message.</td>
@@ -1611,7 +1616,6 @@
 </tbody>
 </table>
 <p><img alt="WPSS email delivery" src="../../img/hq/hq-sms-stats.png" /></p>
-<p>To have detailed statistics of a sms distribution, you must transmit to the support the ID of the desired distribution.</p>
 <p><img alt="WPSS email delivery" src="../../img/hq/hq-sms-detailled-stats.png" /></p>
 
 
