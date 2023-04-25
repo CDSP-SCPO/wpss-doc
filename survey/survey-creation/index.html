@@ -17,7 +17,7 @@
         <link rel="next" href="../survey-collaboration/">
       
       <link rel="icon" href="../../img/favicon-32x32.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
     
     
       
@@ -107,6 +107,8 @@
         </div>
       </div>
     </div>
+    
+      
     
     
     
@@ -834,8 +836,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mandatory-manage-partial-responses" class="md-nav__link">
-    Mandatory: Manage partial responses
+  <a href="#mandatory-manage-incomplete-responses" class="md-nav__link">
+    Mandatory: Manage incomplete responses
   </a>
   
 </li>
@@ -1323,8 +1325,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mandatory-manage-partial-responses" class="md-nav__link">
-    Mandatory: Manage partial responses
+  <a href="#mandatory-manage-incomplete-responses" class="md-nav__link">
+    Mandatory: Manage incomplete responses
   </a>
   
 </li>
@@ -1374,12 +1376,13 @@
 <p><img alt="SP survey options anonymize" src="../../img/survey/survey-option-anonymize.png" /></p>
 <!-- Optionally, we can choose to set a date range for survey validity, and add a custom message when a panelist tries to access an expired survey by clicking a link. -->
 
-<h2 id="mandatory-manage-partial-responses">Mandatory: Manage partial responses<a class="headerlink" href="#mandatory-manage-partial-responses" title="Permanent link">🔗</a></h2>
+<h2 id="mandatory-manage-incomplete-responses">Mandatory: Manage incomplete responses<a class="headerlink" href="#mandatory-manage-incomplete-responses" title="Permanent link">🔗</a></h2>
 <p>Furthermore, to prevent the the survey platform from transforming incomplete responses into complete responses after a chosen time interval, select a value long enough to suit your needs for the <code>Incomplete survey responses</code> option. This will prevent false response rates if this value had been set as shorter than the fieldwork.</p>
 <p><img alt="SP survey options Incomplete survey responses" src="../../img/survey/survey-incomplete-responses.png" /></p>
 <h2 id="mandatory-embed-data">Mandatory: Embed data<a class="headerlink" href="#mandatory-embed-data" title="Permanent link">🔗</a></h2>
 <p>A controlled sub-set of personal data hosted on WPSS are shared with the survey platform for the purpose of survey routing, filtering, and survey dataset production. The variables are available for survey editors to use. The list of variable is as follows:</p>
 <ul>
+<li><code>panel</code></li>
 <li><code>country</code></li>
 <li><code>ess_id</code></li>
 <li><code>id</code> (concatenation of <code>country</code> and <code>ess_id</code>)</li>
