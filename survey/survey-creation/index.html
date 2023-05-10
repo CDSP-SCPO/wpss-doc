@@ -1379,7 +1379,19 @@
 <h2 id="mandatory-manage-incomplete-responses">Mandatory: Manage incomplete responses<a class="headerlink" href="#mandatory-manage-incomplete-responses" title="Permanent link">🔗</a></h2>
 <p>To control precisely how incomplete responses should be managed, a coherent options set must be chosen, as shown below. Yo may chose to record or get rid of incomplete responses. You may also grant an additional grace period from one hour to one year to allow respondents to finish a questionnaire. The grace period can start either the first time the respondent opens the survey, or the last time the respondent answered a question.</p>
 <p>The schema belows shows recommended options (available but not recommended options are greyed).</p>
-<p><img alt="SP incomplete responses management decision tree and Qualtrics options" src="../../img/survey/WPSS_Qualtrics_incomplete_responses_management_decision_tree.png" /></p>
+<p><img alt="incomplete responses management decision tree and Qualtrics options" src="../img/survey/incomplete_responses_management_decision_tree.png" /></p>
+<p>While the corresponding options in Qualtrics are shown below :</p>
+<p><img alt="incomplete responses management options with Qualtrics" src="../img/survey/WPSS-Qualtrics-survey-options.png" /></p>
+<p>This can produce such a scenario:</p>
+<ol>
+<li>A set of individual links is created, with a <strong>one month</strong> validity.</li>
+<li>Individual links are distributed to respondents using messages on March the 1st.</li>
+<li>On Qualtrics, the deadline for incomplete responses is set to one month, starting at "survey start time".</li>
+</ol>
+<p>As a result:
+- A respondent who opened the survey on the distribution day (March the first) is able to complete the survey until the end of March.
+- A respondent who opened his survey on March 30 gains a one month grace period (until April 30).
+- On May the first, all incomplete responses are recorded, with a "partally finished status", no respondent can carry nor complete the questionnaire. The survey stats are final.</p>
 <h2 id="mandatory-embed-data">Mandatory: Embed data<a class="headerlink" href="#mandatory-embed-data" title="Permanent link">🔗</a></h2>
 <p>A controlled sub-set of personal data hosted on WPSS are shared with the survey platform for the purpose of survey routing, filtering, and survey dataset production. The variables are available for survey editors to use. The list of variable is as follows:</p>
 <ul>
