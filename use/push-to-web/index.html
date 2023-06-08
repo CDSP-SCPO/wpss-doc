@@ -1497,13 +1497,13 @@
 <p>We designed a proof-of-concept for this purpose, using Qualtrics© as the survey platform. This method could easily be implemented with other survey platforms.</p>
 <h3 id="constraints">Constraints<a class="headerlink" href="#constraints" title="Permanent link">🔗</a></h3>
 <ul>
-<li>Provide a short URL to the online recruitment survey (this design requires the survey URL printed on a postal letter be typed onto a web browser, or alaternatively can use a <abbr title="Application Programming Interface">QR code</abbr> for this purpose)</li>
+<li>Provide a short URL to the online recruitment survey (this design requires the survey URL printed on a postal letter be typed onto a web browser, or alaternatively can use a <abbr title="for **Q**uick **R**esponse code, a type of machine-readable optical label that can contain information about the item to which it is attached, often pointing to a website.">QR code</abbr> for this purpose)</li>
 <li>Do not use a public link as a survey link (require authentication)</li>
 <li>Provide a custom authentication to the survey, with simple and short codes, to be printed on the invitation postal letter. It should be short and non ambiguous, so that each respondent is able to type it without errors into a web browser address bar.</li>
 <li>Provide a mean to authenticate several members of each household (a code count can be set up at the survey level, the number of household members is a controlled parameter)</li>
 </ul>
 <h2 id="method">Method<a class="headerlink" href="#method" title="Permanent link">🔗</a></h2>
-<p>Create a survey, using the survey platform (no specific licence option needed). 
+<p>Create a survey, using the survey platform (no specific licence option needed).
 The survey will be configured to require authentication. The more straightforward method available is to upload a text file including random and unambiguous short codes that will be used as login (strings). One code will be provided for each household, each code will allow a precise login count, i.e. to be used by a precise number of members of the household. For example if we want to collect a maximum of 4 respondents for each household, we will set up the <code>max login count</code> set to 4.</p>
 <h2 id="step-by-step">Step by step<a class="headerlink" href="#step-by-step" title="Permanent link">🔗</a></h2>
 <h4 id="step-1-sample-file-preparation"><strong>Step 1: sample file preparation</strong><a class="headerlink" href="#step-1-sample-file-preparation" title="Permanent link">🔗</a></h4>
@@ -1543,7 +1543,7 @@ To enable the authentication on a survey, go in your survey project page and cli
 <h4 id="step-4-start-the-survey"><strong>Step 4: start the survey</strong><a class="headerlink" href="#step-4-start-the-survey" title="Permanent link">🔗</a></h4>
 <p>Publish the survey and distribute the anonymous link, to be found under <code>Distributions ➡ Anonymous Link</code>. Each respondent will have to type their code to be able to answer the survey.</p>
 <h4 id="step-5-end-of-the-survey"><strong>Step 5: end of the survey</strong><a class="headerlink" href="#step-5-end-of-the-survey" title="Permanent link">🔗</a></h4>
-<p>When the survey ends, you might need to do some housekeeping on the data collected to remove incomplete answers, duplicate answers, and eventually randomly select the answers count to keep for each household. </p>
+<p>When the survey ends, you might need to do some housekeeping on the data collected to remove incomplete answers, duplicate answers, and eventually randomly select the answers count to keep for each household.</p>
 <h4 id="after-the-fieldwork"><strong>After the fieldwork</strong><a class="headerlink" href="#after-the-fieldwork" title="Permanent link">🔗</a></h4>
 <p>Once the push to web is completed, you can use the new sample file created from the answers as a <a href="../../nc/sample-import-export-fields/">sample import file for WPSS</a>.</p>
 
@@ -1567,7 +1567,7 @@ To enable the authentication on a survey, go in your survey project page and cli
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      This project has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 823782. <a href='https://doi.org/10.3030/871063'>doi:10.3030/871063</a>. Content is Licensed as CC BY 4.0
+      This project has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreements No 871063. <a href='https://doi.org/10.3030/871063'>DOI:10.3030/871063</a> and No 823782 <a href='https://doi.org/10.3030/823782'>DOI:10.3030/823782</a>. Content is Licensed as CC BY 4.0
     </div>
   
   
