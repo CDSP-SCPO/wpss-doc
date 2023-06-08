@@ -17,7 +17,7 @@
         <link rel="next" href="../survey-collaboration/">
       
       <link rel="icon" href="../../img/favicon-32x32.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
     
     
       
@@ -25,10 +25,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.85bb2934.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.a6bdf11c.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -829,29 +829,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mandatory-define-security-parameters" class="md-nav__link">
-    Mandatory: Define security parameters
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mandatory-manage-incomplete-responses" class="md-nav__link">
-    Mandatory: Manage incomplete responses
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mandatory-embed-data" class="md-nav__link">
-    Mandatory: Embed data
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#design-paradata-collection" class="md-nav__link">
-    Design paradata collection
+  <a href="#define-security-parameters" class="md-nav__link">
+    Define security parameters
   </a>
   
 </li>
@@ -859,6 +838,20 @@
         <li class="md-nav__item">
   <a href="#customize-survey-style" class="md-nav__link">
     Customize survey style
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#embed-data" class="md-nav__link">
+    Embed data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-paradata-collection" class="md-nav__link">
+    Design paradata collection
   </a>
   
 </li>
@@ -1318,29 +1311,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mandatory-define-security-parameters" class="md-nav__link">
-    Mandatory: Define security parameters
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mandatory-manage-incomplete-responses" class="md-nav__link">
-    Mandatory: Manage incomplete responses
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mandatory-embed-data" class="md-nav__link">
-    Mandatory: Embed data
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#design-paradata-collection" class="md-nav__link">
-    Design paradata collection
+  <a href="#define-security-parameters" class="md-nav__link">
+    Define security parameters
   </a>
   
 </li>
@@ -1348,6 +1320,20 @@
         <li class="md-nav__item">
   <a href="#customize-survey-style" class="md-nav__link">
     Customize survey style
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#embed-data" class="md-nav__link">
+    Embed data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-paradata-collection" class="md-nav__link">
+    Design paradata collection
   </a>
   
 </li>
@@ -1369,49 +1355,15 @@
 
 <h1 id="create-a-survey">Create a survey<a class="headerlink" href="#create-a-survey" title="Permanent link">🔗</a></h1>
 <p>At survey creation setting security parameters is mandatory. Optionnally, the survey editor can modify the survey styling as desired, design paradata collection and embed WPSS data.</p>
-<h2 id="mandatory-define-security-parameters">Mandatory: Define security parameters<a class="headerlink" href="#mandatory-define-security-parameters" title="Permanent link">🔗</a></h2>
+<h2 id="define-security-parameters">Define security parameters<a class="headerlink" href="#define-security-parameters" title="Permanent link">🔗</a></h2>
 <p>Go to : <code>Project ➡ Survey Options ➡ Security</code> and select <code>Survey Access ➡ By invitation only</code> as shown below:</p>
 <p><img alt="SP survey options invitation" src="../../img/survey/survey-option-security-invite.png" /></p>
 <p>Select aloso <code>Anonymise responses</code>:</p>
 <p><img alt="SP survey options anonymize" src="../../img/survey/survey-option-anonymize.png" /></p>
 <!-- Optionally, we can choose to set a date range for survey validity, and add a custom message when a panelist tries to access an expired survey by clicking a link. -->
 
-<h2 id="mandatory-manage-incomplete-responses">Mandatory: Manage incomplete responses<a class="headerlink" href="#mandatory-manage-incomplete-responses" title="Permanent link">🔗</a></h2>
-<p>To control precisely how incomplete responses should be managed, a coherent options set must be chosen. Yo may chose to record or get rid of incomplete responses.</p>
-<p>The schema belows shows recommended options (available but not recommended options are greyed).</p>
-<p><img alt="incomplete responses management decision tree and Qualtrics options" src="../../img/survey/incomplete_responses_management_decision_tree.jpg" /></p>
-<p>You may also grant an additional grace period from one hour to one year to allow respondents to finish a questionnaire. The grace period can start either the first time the respondent opens the survey, or the last time the respondent answered a question. The relevant options in Qualtrics are shown below :</p>
-<p><img alt="incomplete responses management options with Qualtrics" src="../../img/survey/WPSS-Qualtrics-survey-options.jpg" /></p>
-<p>This can produce such a scenario:</p>
-<ol>
-<li>A set of individual links is created, with a <strong>one month</strong> validity.</li>
-<li>Individual links are distributed to respondents using messages on March the 1st.</li>
-<li>On Qualtrics, the deadline for incomplete responses is set to one month, starting at "survey start time".</li>
-</ol>
-<p>As a result:</p>
-<ul>
-<li>A respondent who opened the survey on the distribution day (March the first) is able to complete the survey until the end of March.</li>
-<li>A respondent who opened his survey on March 30 gains a one month grace period (until April 30).</li>
-<li>On May the first, all incomplete responses are recorded, with a <a href="../../hq/fieldwork/#response-rates"><code>partially finished status</code></a>, no respondent can carry nor complete the questionnaire. The survey stats are final.</li>
-</ul>
-<h2 id="mandatory-embed-data">Mandatory: Embed data<a class="headerlink" href="#mandatory-embed-data" title="Permanent link">🔗</a></h2>
-<p>A controlled sub-set of personal data hosted on WPSS are shared with the survey platform for the purpose of survey routing, filtering, and survey dataset production. The variables are available for survey editors to use. The list of variable is as follows:</p>
-<ul>
-<li><code>panel</code></li>
-<li><code>country</code></li>
-<li><code>ess_id</code></li>
-<li><code>id</code> (concatenation of <code>country</code> and <code>ess_id</code>)</li>
-<li><code>sex</code></li>
-<li><code>title</code></li>
-</ul>
-<p>To include embedded data in the dataset export file, you have to declare embedded data in the <code>Data Flow</code> as shown below:</p>
-<p><img alt="SP survey data flow option" src="../../img/survey/survey-flow.png" /></p>
-<p><img alt="SP survey data flow option" src="../../img/survey/survey-embedded-data.png" /></p>
-<p>You do not have to declare embedded data in the data flow in order to use it as survey branching conditions. This operation is needed to include this data in the survey dataset.</p>
-<h2 id="design-paradata-collection">Design paradata collection<a class="headerlink" href="#design-paradata-collection" title="Permanent link">🔗</a></h2>
-<p>To collect timestamps paradata, go to <code>Project ➡ Survey Flow</code> and declare an <code>embedded data Field</code> below each survey block as:</p>
-<p><code>${date://CurrentDate/c}</code></p>
-<p><img alt="SP survey flow paradata timestamp" src="../../img/survey/survey-flow-paradata.png" /></p>
+<p>Furthermore, to prevent the the survey platform from transforming incomplete responses into complete responses after a chosen time interval, select a value long enough to suit your needs for the <code>Incomplete survey responses</code> option. This will prevent false response rates if this value had been set as shorter than the fieldwork.</p>
+<p><img alt="SP survey options Incomplete survey responses" src="../../img/survey/survey-incomplete-responses.png" /></p>
 <h2 id="customize-survey-style">Customize survey style<a class="headerlink" href="#customize-survey-style" title="Permanent link">🔗</a></h2>
 <p>Select <code>Look and feel</code> : Custom theme: Edit
 <img alt="SP survey look and feel" src="../../img/survey/survey-style.png" /></p>
@@ -1493,6 +1445,23 @@ If you observe that a modification doesn’t show, you can add the rule <code>!i
 <span class="k">padding-bottom</span><span class="p">:</span><span class="mi">0</span><span class="kt">px</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span><span class="k">padding-top</span><span class="p">:</span><span class="mi">0</span><span class="kt">px</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
+<h2 id="embed-data">Embed data<a class="headerlink" href="#embed-data" title="Permanent link">🔗</a></h2>
+<p>A controlled sub-set of personal data hosted on WPSS are shared with the survey platform for the purpose of survey routing, filtering, and survey dataset production. The variables are available for survey editors to use. The list of variable is as follows:</p>
+<ul>
+<li><code>country</code></li>
+<li><code>ess_id</code></li>
+<li><code>id</code> (concatenation of <code>country</code> and <code>ess_id</code>)</li>
+<li><code>sex</code></li>
+<li><code>title</code></li>
+</ul>
+<p>To include embedded data in the dataset export file, you have to declare embedded data in the <code>Data Flow</code> as shown below:</p>
+<p><img alt="SP survey data flow option" src="../../img/survey/survey-flow.png" /></p>
+<p><img alt="SP survey data flow option" src="../../img/survey/survey-embedded-data.png" /></p>
+<p>You do not have to declare embedded data in the data flow in order to use it as survey branching conditions. This operation is needed to include this data in the survey dataset.</p>
+<h2 id="design-paradata-collection">Design paradata collection<a class="headerlink" href="#design-paradata-collection" title="Permanent link">🔗</a></h2>
+<p>To collect timestamps paradata, go to <code>Project ➡ Survey Flow</code> and declare an <code>embedded data Field</code> below each survey block as:</p>
+<p><code>${date://CurrentDate/c}</code></p>
+<p><img alt="SP survey flow paradata timestamp" src="../../img/survey/survey-flow-paradata.png" /></p>
 
 
 
@@ -1514,7 +1483,7 @@ If you observe that a modification doesn’t show, you can add the rule <code>!i
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      This project has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreements No 871063. <a href='https://doi.org/10.3030/871063'>DOI:10.3030/871063</a> and No 823782 <a href='https://doi.org/10.3030/823782'>DOI:10.3030/823782</a>. Content is Licensed as CC BY 4.0
+      This project has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 823782. <a href='https://doi.org/10.3030/871063'>doi:10.3030/871063</a>. Content is Licensed as CC BY 4.0
     </div>
   
   
@@ -1537,7 +1506,7 @@ If you observe that a modification doesn’t show, you can add the rule <code>!i
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b4d07000.min.js"></script>
       
     
   </body>
